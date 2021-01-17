@@ -4,7 +4,9 @@ import './Post.css'
 const Post = (props) => (
   <div className="panel panel-default post-body">
     <div className="panel-body">
-      {props.postBody}
+        <div className="post">
+            {props.postBody}
+        </div>
     </div>
   </div>
 );

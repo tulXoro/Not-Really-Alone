@@ -20,17 +20,23 @@ handlePostEditorInputChange(ev) {
   });
 }
 
-createPost() {
-  this.props.addPost(this.state.newPostBody);
-  this.setState({
-    newPostBody: '',
-  });
+createPost = (e) => {
+    e.preventDefault();
+    if(this.state.newPostBody ==='') return;
+    this.props.addPost(this.state.newPostBody);
+    this.setState({
+        newPostBody: '',
+    });
 }
 
 onEnterPress = (e) => {
   if(e.keyCode == 13 && e.shiftKey == false) {
+    if(this.state.newPostBody ==='') return;
     e.preventDefault();
-    this.createPost();
+    this.props.addPost(this.state.newPostBody);
+    this.setState({
+        newPostBody: '',
+    });
   }
 }
 
@@ -38,10 +44,10 @@ render() {
   return (
     <form ref={el => this.myFormRef = el} className="">
         <div className="panel panel-default post-editor">
-        <div className="panel-body2">
-            <textarea className="form-control post-editor-input" value={this.state.newPostBody} onChange={this.handlePostEditorInputChange} placeholder="Describe a situation or give advice..." onKeyDown={this.onEnterPress}/>
-            <button className="btn btn-success post-editor-button" onClick={this.createPost} >Post</button>
-            
+            <div className="panel-body2">
+                <button className="btn btn-success post-editor-button" onClick={this.createPost}>Post</button>
+                <textarea className="form-control post-editor-input" value={this.state.newPostBody} onChange={this.handlePostEditorInputChange} placeholder="Describe a situation or give advice..." onKeyDown={this.onEnterPress}/>
+                
             </div>
         </div>
       </form>

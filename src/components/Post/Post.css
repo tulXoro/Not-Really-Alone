@@ -1,5 +1,11 @@
 .panel-body {
-    background-color: #e7b4c7;
+  background: #3c3464;
+  color: #fff;
   padding: 10px;
   border-radius: 25px;
+}
+.post {
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap: break-word
 }

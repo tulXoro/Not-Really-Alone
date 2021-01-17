@@ -5,8 +5,12 @@
 }
 
 .post-editor-button {
+    margin: 0;
+    height: 50px;
     padding: 8px 20px;
     border-radius: 4px;
+    background: #fff;
+    color: #3c3464;
     outline: none;
     cursor: pointer;
 }
@@ -14,7 +18,7 @@
 .post-editor-button:hover {
     padding: 8px 20px;
     transition: all 0.3s ease-in;
-    background: #fff;
-    color: #3c3464;
+    background: #3c3464;
+    color: #fff;
     transition: 250ms;
 }

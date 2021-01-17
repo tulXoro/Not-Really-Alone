@@ -7,6 +7,14 @@
     font-size: 1.2rem;
 }
 
+img {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
 .logo-cust {
     position: center;
     top: 0;
@@ -58,6 +66,7 @@
 
 .menu-icon {
     display:none;
+
 }
 
 @media screen and (max-width: 960px) {
@@ -112,6 +121,7 @@
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+        
     }
 
     .fa-times {
