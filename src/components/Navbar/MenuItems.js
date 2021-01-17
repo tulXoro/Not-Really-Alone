@@ -8,16 +8,16 @@ export const MenuItems = [
     },
     {
         title: 'About',
-        url: '#',
+        url: '#', //needs content
         cName: 'nav-links' //className component
     },
     {
         title: 'Contact Us',
-        url: '#',
+        url: '#', //needs content
         cName: 'nav-links' //className component
     }
     //{
-        //title: 'Extra Mobile',
+        //title: 'Button Format',
         //url: '#',
         //cName: 'nav-links-mobile' //className component
     //}
