@@ -1,3 +1,7 @@
+# Submitted for the Rose Hackathon 2021
+## Description
+Allows users to text and chat anonymously
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Running on Repl.it
