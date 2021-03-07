@@ -1,6 +1,6 @@
 # Submitted for the Rose Hackathon 2021
 ## Description
-Allows users to text and chat anonymously
+Allows users to text and chat anonymously. Made for UCR Rose Hackathon 2021
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
